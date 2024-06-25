@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<div>Test : {{ test_name }}</div>
+	
+	<ul>
+		{% for student in students %}
+		<li>
+			<em>{{ student.name }}:</em>
+			{{ student.score }} / {{ max_score }}
+		</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
